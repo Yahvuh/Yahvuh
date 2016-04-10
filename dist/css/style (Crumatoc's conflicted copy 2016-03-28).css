@@ -1,0 +1,54 @@
+/* Small CSS Reset */
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, dl, dt, dd, blockquote, address {
+  margin: 0;
+  padding: 0; }
+
+#LandingPage {
+  background-color: #FFF;
+  height: 100vh;
+  width: 100vw; }
+  #LandingPage #Intro {
+    text-align: center;
+    font-size: 2em;
+    color: #0C0C0C;
+    position: relative;
+    top: 50%;
+    transform: translateY(-100%); }
+    #LandingPage #Intro h1 {
+      font-family: 'Lato', sans-serif;
+      margin-bottom: 20px; }
+  #LandingPage #Menu {
+    margin-top: 2em;
+    margin-right: 5em;
+    margin-left: 5em; }
+    #LandingPage #Menu a {
+      font-family: 'Lato', sans-serif;
+      text-decoration: none;
+      color: #0C0C0C;
+      font-weight: 700; }
+    #LandingPage #Menu #Home {
+      clear: both;
+      float: left; }
+    #LandingPage #Menu #Items {
+      margin-right: 0px;
+      float: right;
+      text-align: right; }
+      #LandingPage #Menu #Items a {
+        margin-left: 5em; }
+  #LandingPage #MenuBanner {
+    margin-top: 2em;
+    width: 100%;
+    border-bottom: 1px solid #eee; }
+
+#NextPage {
+  background-color: #0C0C0C;
+  height: 100vh; }
+  #NextPage #content {
+    text-align: center;
+    font-size: 2em;
+    color: #FFF;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); }
+    #NextPage #content h1 {
+      font-family: 'Lato', sans-serif; }
