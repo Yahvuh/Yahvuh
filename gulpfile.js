@@ -1,15 +1,17 @@
-var gulp = require('gulp'),
+'use strict';
+
+const gulp = require('gulp'),
     plumber = require('gulp-plumber'),
     rename = require('gulp-rename');
-var autoprefixer = require('gulp-autoprefixer');
-var concat = require('gulp-concat');
-var uglify = require('gulp-uglify');
-var imagemin = require('gulp-imagemin'),
-    cache = require('gulp-cache');
-var minifycss = require('gulp-minify-css');
-var sass = require('gulp-sass');
-var browserSync = require('browser-sync');
-var jade = require('gulp-jade');
+const autoprefixer = require('gulp-autoprefixer');
+const concat = require('gulp-concat');
+const uglify = require('gulp-uglify');
+const imagemin = require('gulp-imagemin'),
+    cache = require(  'gulp-cache');
+const minifycss = require('gulp-minify-css');
+const sass = require('gulp-sass');
+const browserSync = require('browser-sync');
+const jade = require('gulp-jade');
 
 gulp.task('browser-sync', function() {
   browserSync({
@@ -24,7 +26,7 @@ gulp.task('bs-reload', function () {
 });
 
 gulp.task('images', function(){
-  gulp.src('src/images/**/*')
+  gulp.src('src/images/*')
     .pipe(cache(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true })))
     .pipe(gulp.dest('dist/images/'));
 });
@@ -42,7 +44,7 @@ gulp.task('styles', function(){
     .pipe(rename({suffix: '.min'}))
     .pipe(minifycss())
     .pipe(gulp.dest('dist/styles/'))
-    .pipe(browserSync.reload({stream:true}))
+    .pipe(browserSync.reload({stream:true}));
 });
 
 gulp.task('scripts', function(){
@@ -57,14 +59,14 @@ gulp.task('scripts', function(){
     .pipe(rename({suffix: '.min'}))
     .pipe(uglify())
     .pipe(gulp.dest('dist/scripts/'))
-    .pipe(browserSync.reload({stream:true}))
+    .pipe(browserSync.reload({stream:true}));
 });
 
 gulp.task('jade', function() {
   return gulp.src('src/jade/*.jade')
     .pipe(jade())
     .pipe(gulp.dest('dist/'))
-    .pipe(browserSync.stream({once:true}))
+    .pipe(browserSync.stream({once:true}));
 });
 
 gulp.task('default', ['browser-sync'], function(){

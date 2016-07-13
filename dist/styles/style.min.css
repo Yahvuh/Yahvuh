@@ -1,1 +1,1 @@
-body{background-color:#eee}
+.landing,body{margin:0 auto}.description,.nav{text-align:center}body{background-color:#f8f8f8;overflow-x:hidden;font-family:Oswald,sans-serif}.landing{width:80%;height:100vh}.nav ul{display:inline-block;list-style-type:none}.nav ul li{float:left;margin-right:1em;margin-left:1em}.nav ul li a{font-weight:400;text-decoration:none;color:#000}.description{position:relative;top:40%;-webkit-transform:translateY(-50%);transform:translateY(-50%)}.description h1{font-size:3em;font-weight:700;letter-spacing:.2em}.description p{letter-spacing:.1em}
