@@ -35,3 +35,16 @@ body {
     letter-spacing: .2em; }
   .description p {
     letter-spacing: .1em; }
+
+.second {
+  width: 80%;
+  height: 100vh;
+  margin: 0 auto; }
+  .second .about {
+    text-align: center;
+    position: relative;
+    top: 40%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%); }
+    .second .about p {
+      font-family: 'Courier', serif; }
