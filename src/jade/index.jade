@@ -3,41 +3,45 @@ head
 	title Yahvuh
 	meta(charset="utf-8")
 	meta(name="viewport" content="width=device-width, initial-scale=1")
-	link(rel="stylesheet", href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css")
-	link(rel='stylesheet' ,href='https://fonts.googleapis.com/css?family=Oswald:400,700', type='text/css')
+	link(rel="stylesheet", href="https://unpkg.com/purecss@0.6.2/build/pure-min.css")
+	link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Oswald:400,700', type='text/css')
+	link(rel='stylesheet', href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css")
 	link(rel='stylesheet', href='styles/style.min.css')
-	script(src='js/main.js')
 body
-	section.landing
-		div.nav.pure-g
-			nav.pure-u-1
+	div.content.pure-g
+		section(id="home", class="landing pure-u-1")
+			div.description.pure-u-1
+				h1 JOHN YAHVUH
+				p 
+					span JAVASCRIPT DEVELOPER | 
+					span KINGSTON
+				div.buttons.pure-u-1
+					a(href="#about") ABOUT
+					a(href="#portfolio") PORTFOLIO
+					a(href="#contact") CONTACT
+			div.nav.pure-u-1
 				ul
-					li 
-						a(href="#") ABOUT
-					li 
-						a(href="#") PORTFOLIO
-					li 
-						a(href="#") CONTACT
-					li 
-						a(href="#") BLOG
-		div.description
-			h1 JOHN YAHVUH
-			p PROCRASTINATION EXTRAORDINAIRE | TORONTO
-		
-	section.second
-		div.about.pure-g
-			h1.pure-u-1 What does he do?
-			p.pure-u-1 Frequently presses keys together into a machine.
-			p.pure-u-1 Originally started making things using MEAN.
-			p.pure-u-1 Found Angular too broad in its Version 1.
-			p.pure-u-1 Stuck with React because its way more fun.
-			p.pure-u-1 Had a JavaScript crisis, tried out Ruby.
-			p.pure-u-1 Yeah, its whitespace. Its kind of groovey.
-			p.pure-u-1 ES6 got wide spread adoption.
-			p.pure-u-1 Made life a whole lot easier.
-			p.pure-u-1 Now here I am, with not the 
-				i worst 
-				span option.
-			p.pure-u-1 Whatever, I'll just gloat it makes prototyping easier.
+					li
+						a(href="#" class="fa fa-envelope")
+						a(href="#" class="fa fa-linkedin-square")
+						a(href="#" class="fa fa-github-square")
+						a(href="#" class="fa fa-twitter-square")
+			p(class="arrow fa fa-arrow-down")
 			
-	footer.footer
+		section(id="about", class="second pure-u-1")
+			div.about.pure-u-1
+				h1.pure-u-1 What does he do?
+				p.pure-u-1 Frequently presses keys together into a machine.
+				p.pure-u-1 Originally started making things using MEAN.
+				p.pure-u-1 Found Angular too broad in its Version 1.
+				p.pure-u-1 Stuck with React because its way more fun.
+				p.pure-u-1 Had a JavaScript crisis, tried out Ruby.
+				p.pure-u-1 Yeah, its whitespace. Its kind of groovey.
+				p.pure-u-1 ES6 got wide spread adoption.
+				p.pure-u-1 Made life a whole lot easier.
+				p.pure-u-1 Now here I am, with not the 
+					i worst 
+					span option.
+				p.pure-u-1 Whatever, I'll just gloat it makes prototyping easier.
+		footer.footer
+		script(src='js/main.js').
