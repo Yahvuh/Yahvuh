@@ -184,7 +184,6 @@ body {
       max-width: 75%;
       font-family: 'Courier', serif; }
   .content .contact .contLeft {
-    float: left;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -198,6 +197,7 @@ body {
         -ms-flex-align: center;
             align-items: center;
     height: 100%;
+    float: left;
     background-color: #02AAB0; }
   .content .contact .contRight {
     display: -webkit-box;
@@ -216,9 +216,9 @@ body {
     float: right;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: center;
-        -ms-flex-direction: center;
-            flex-direction: center;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     background-color: #f8f8f8; }
   .content .contact p {
     max-width: 75%;
