@@ -27,22 +27,26 @@ body
 .content
 	text-align: center
 	.landing
-		background-color: #e74c3c
+		//background-color: #D95B43
+		//background-color: #666
+		// TEMPORARY BACKGROUND
+		background: url('../images/cover.jpg') center
+		background-size: cover
 		@include block
-		.arrow
-			color: black
-			text-decoration: none
-			font-size: 2em
 		.nav
 			li
 				list-style-type: none
+				margin-right: 2.5em
 				a
 					text-decoration: none
 					color: black
 					margin-left: 1em
 					margin-right: 1em
+					transition: all 0.5s ease-in-out
+					font-size: 1.2em
 					&:hover
-						text-decoration: underline
+						color: #C02942
+						transition: all 0.5s ease-in-out
 		.description
 			padding-top: 5em
 			h1
@@ -52,29 +56,31 @@ body
 				letter-spacing: .2em
 				letter-spacing: .1em
 			a
-				color: black
+				color: #fff
 				text-decoration: none
 				margin-left: 0.5em
 				margin-right: 0.5em
 				padding: 0.75em 1.5em 0.75em 1.5em
-
+			p
+				color: white
+				margin-bottom: 2em
 			.buttons
-				padding-top: 5em
 				a
-					border: 1px solid black
-					border-radius: 0.5em
+					color: #fff
+					border: 1px solid #fff
+					transition: all 0.25s ease-in-out
 					&:hover
-						border: 1px solid black
-						background-color: #D91E18
-						transition: all .5s
-						transition-timing-function: linear
-						//color: #D91E18
+						//background-color: #C02942
+						box-shadow: 0px 7px 10px #535353
+						color: #b1b1b1
+						border: 1px solid #b1b1b1
+						transition: all 0.25s ease-in-out
 	.about
 		@include block
 		.aboutLeft
 			@include center
 			float: left
-			background-color: #02AAB0
+			background-color: #53777A
 		.aboutRight
 			@include center
 			flex-direction: column
@@ -93,7 +99,7 @@ body
 			@include center
 			float: right
 			flex-direction: column
-			background-color: #02AAB0
+			background-color: #53777A
 		p
 			max-width: 75%
 			font-family: 'Courier', serif
@@ -101,7 +107,7 @@ body
 		.contLeft
 			@include center
 			float: left
-			background-color: #02AAB0
+			background-color: #53777A
 		.contRight
 			@include center
 			float: right
