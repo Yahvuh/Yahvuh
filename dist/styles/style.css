@@ -31,21 +31,23 @@ body {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
-    .content .landing .nav li {
-      list-style-type: none;
-      margin-right: 2.5em; }
-      .content .landing .nav li a {
-        text-decoration: none;
-        color: black;
-        margin-left: 1em;
-        margin-right: 1em;
-        -webkit-transition: all 0.5s ease-in-out;
-                transition: all 0.5s ease-in-out;
-        font-size: 1.2em; }
-        .content .landing .nav li a:hover {
-          color: #C02942;
+    .content .landing .nav {
+      padding-top: 15em; }
+      .content .landing .nav li {
+        list-style-type: none;
+        margin-right: 2.5em; }
+        .content .landing .nav li a {
+          text-decoration: none;
+          color: black;
+          margin-left: 1em;
+          margin-right: 1em;
           -webkit-transition: all 0.5s ease-in-out;
-                  transition: all 0.5s ease-in-out; }
+                  transition: all 0.5s ease-in-out;
+          font-size: 2em; }
+          .content .landing .nav li a:hover {
+            color: #C02942;
+            -webkit-transition: all 0.5s ease-in-out;
+                    transition: all 0.5s ease-in-out; }
     .content .landing .description {
       padding-top: 5em; }
       .content .landing .description h1 {
@@ -228,3 +230,32 @@ body {
   .content .contact p {
     max-width: 75%;
     font-family: 'Courier', serif; }
+
+.contentPort .title {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .contentPort .title .port {
+    letter-spacing: 0.1em;
+    float: left;
+    font-size: 5em;
+    margin-top: 2em;
+    background-color: black;
+    padding: 0.1em 0.1em 0.1em 0.2em; }
+
+.contentPort .work {
+  margin: 0 auto;
+  list-style: none;
+  text-align: center;
+  max-width: 70%;
+  float: right;
+  clear: both;
+  border: 1px solid black; }
+  .contentPort .work li {
+    border: 1px solid black;
+    margin: 1em 0 1em 1em; }

@@ -34,6 +34,7 @@ body
 		background-size: cover
 		@include block
 		.nav
+			padding-top: 15em
 			li
 				list-style-type: none
 				margin-right: 2.5em
@@ -43,7 +44,7 @@ body
 					margin-left: 1em
 					margin-right: 1em
 					transition: all 0.5s ease-in-out
-					font-size: 1.2em
+					font-size: 2em
 					&:hover
 						color: #C02942
 						transition: all 0.5s ease-in-out
@@ -116,3 +117,28 @@ body
 		p
 			max-width: 75%
 			font-family: 'Courier', serif
+
+// Stuff for the portfolio styles
+
+.contentPort
+	.title
+		display: flex
+		justify-content: center
+		.port
+			letter-spacing: 0.1em
+			float: left
+			font-size: 5em
+			margin-top: 2em
+			background-color: black
+			padding: 0.1em 0.1em 0.1em 0.2em
+	.work
+		margin: 0 auto
+		list-style: none
+		text-align: center
+		max-width: 70%
+		float: right
+		clear: both
+		border: 1px solid black
+		li
+			border: 1px solid black
+			margin: 1em 0 1em 1em
