@@ -1,3 +1,8 @@
+$accent: #f1404b
+$dark: #252c41
+$light: #f4f5f9
+$base: #dddfe6
+
 @mixin block
 	height: 100vh
 	display: flex
@@ -9,7 +14,6 @@
 	display: flex
 	justify-content: center
 	align-items: center
-	height: 100%
 
 @mixin shadow
 	text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff, -1px 1px #fff, -2px 2px #fff, -3px 3px #fff, -4px 4px #fff, -5px 5px #fff
@@ -27,96 +31,104 @@ body
 .content
 	text-align: center
 	.landing
-		//background-color: #D95B43
-		//background-color: #666
-		// TEMPORARY BACKGROUND
-		background: url('../images/cover.jpg') center
-		background-size: cover
+		background-color: $dark
 		@include block
-		.nav
-			padding-top: 15em
-			li
-				list-style-type: none
-				margin-right: 2.5em
-				a
-					text-decoration: none
-					color: black
-					margin-left: 1em
-					margin-right: 1em
-					transition: all 0.5s ease-in-out
-					font-size: 2em
-					&:hover
-						color: #C02942
-						transition: all 0.5s ease-in-out
+		height: 60vh
 		.description
-			padding-top: 5em
+			display: flex
+			justify-content: center
+			flex-direction: column
 			h1
 				@include shadow
 				font-size: 3em
 				font-weight: 700
 				letter-spacing: .2em
 				letter-spacing: .1em
+			p
+				margin-top: -1vh
+				color: white
+		.buttons
+			margin-top: 5vh
 			a
 				color: #fff
+				border: 1px solid #fff
+				transition: all 0.25s ease-in-out
 				text-decoration: none
 				margin-left: 0.5em
 				margin-right: 0.5em
 				padding: 0.75em 1.5em 0.75em 1.5em
+				&:hover
+					background-color: $dark
+					color: $accent
+					border: 1px solid $accent
+					transition: all 0.25s ease-in-out
+		.nav
+			//this works lol
+			transform: translateY(7.3vh)
+			background-color: $dark
 			p
 				color: white
-				margin-bottom: 2em
-			.buttons
+				padding-top: 1em
+			li
+				list-style-type: none
+				margin-right: 2.5em
 				a
-					color: #fff
-					border: 1px solid #fff
-					transition: all 0.25s ease-in-out
+					text-decoration: none
+					color: white
+					margin-left: 1em
+					margin-right: 1em
+					transition: all 0.5s ease-in-out
+					font-size: 1.5em
 					&:hover
-						//background-color: #C02942
-						box-shadow: 0px 7px 10px #535353
-						color: #b1b1b1
-						border: 1px solid #b1b1b1
-						transition: all 0.25s ease-in-out
-	.about
-		@include block
-		.aboutLeft
-			@include center
-			float: left
-			background-color: #53777A
-		.aboutRight
-			@include center
-			flex-direction: column
-			float: right
-			background-color: #f8f8f8
-		p
-			max-width: 75%
-			font-family: 'Courier', serif
-	.portfolio
-		@include block
-		.portLeft
-			@include center
-			float: left
-			background-color: #f8f8f8
-		.portRight
-			@include center
-			float: right
-			flex-direction: column
-			background-color: #53777A
-		p
-			max-width: 75%
-			font-family: 'Courier', serif
-	.contact
-		.contLeft
-			@include center
-			float: left
-			background-color: #53777A
-		.contRight
-			@include center
-			float: right
-			flex-direction: column
-			background-color: #f8f8f8
-		p
-			max-width: 75%
-			font-family: 'Courier', serif
+						color: $accent
+						transition: all 0.5s ease-in-out
+	.posts
+		@include center
+		border: 1px solid white
+		.post
+			max-width: 50%
+
+	// .about
+	// 	@include block
+	// 	.aboutLeft
+	// 		@include center
+	// 		float: left
+	// 		background-color: #53777A
+	// 	.aboutRight
+	// 		@include center
+	// 		flex-direction: column
+	// 		float: right
+	// 		background-color: #f8f8f8
+	// 	p
+	// 		max-width: 75%
+	// 		font-family: 'Courier', serif
+	// .portfolio
+	// 	@include block
+	// 	.portLeft
+	// 		@include center
+	// 		float: left
+	// 		background-color: #f8f8f8
+	// 	.portRight
+	// 		@include center
+	// 		float: right
+	// 		flex-direction: column
+	// 		background-color: #53777A
+	// 	p
+	// 		max-width: 75%
+	// 		font-family: 'Courier', serif
+	// .contact
+	// 	.contLeft
+	// 		@include center
+	// 		float: left
+	// 		background-color: #53777A
+	// 	.contRight
+	// 		@include center
+	// 		float: right
+	// 		flex-direction: column
+	// 		background-color: #f8f8f8
+	// 	p
+	// 		max-width: 75%
+	// 		font-family: 'Courier', serif
 
 // Stuff for the portfolio styles
 
