@@ -10,6 +10,11 @@ p, a {
 body {
   overflow-x: hidden; }
 
+.gradient {
+  height: 5vh;
+  background: -webkit-linear-gradient(top, #252c41 1%, #f4f5f9 20%);
+  background: linear-gradient(to bottom, #252c41 1%, #f4f5f9 20%); }
+
 .content {
   text-align: center; }
   .content .landing {
@@ -30,7 +35,7 @@ body {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 60vh; }
+    height: 80vh; }
     .content .landing .description {
       display: -webkit-box;
       display: -webkit-flex;
@@ -72,8 +77,6 @@ body {
           -webkit-transition: all 0.25s ease-in-out;
                   transition: all 0.25s ease-in-out; }
     .content .landing .nav {
-      -webkit-transform: translateY(7.3vh);
-              transform: translateY(7.3vh);
       background-color: #252c41; }
       .content .landing .nav p {
         color: white;
@@ -106,7 +109,7 @@ body {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    border: 1px solid white; }
+    background-color: #f4f5f9; }
     .content .posts .post {
       max-width: 50%; }
 

@@ -28,12 +28,15 @@ p, a
 
 body
 	overflow-x: hidden
+.gradient
+	height: 5vh
+	background: linear-gradient(to bottom, rgba(37,44,65,1) 1%,$light 20%)
 .content
 	text-align: center
 	.landing
 		background-color: $dark
 		@include block
-		height: 60vh
+		height: 80vh
 		.description
 			display: flex
 			justify-content: center
@@ -64,7 +67,7 @@ body
 					transition: all 0.25s ease-in-out
 		.nav
 			//this works lol
-			transform: translateY(7.3vh)
+			//transform: translateY(7.3vh)
 			background-color: $dark
 			p
 				color: white
@@ -84,7 +87,7 @@ body
 						transition: all 0.5s ease-in-out
 	.posts
 		@include center
-		border: 1px solid white
+		background-color: $light
 		.post
 			max-width: 50%
 
